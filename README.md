@@ -1,16 +1,24 @@
-# pr_bridge_ui
+# PR Bridge UI
 
-A new Flutter project.
+GitHub Pull Request 감지 및 Jenkins 트리거 관리를 위한 웹 기반 관리 인터페이스입니다.
 
-## Getting Started
+## 개요
 
-This project is a starting point for a Flutter application.
+PR Bridge UI는 PR Bridge 서버와 WebSocket으로 실시간 통신하며, GitHub PR 폴링 설정과 Jenkins 빌드 트리거를 관리할 수 있는 Flutter 기반 웹 애플리케이션입니다.
 
-A few resources to get you started if this is your first Flutter project:
+## 주요 기능
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### 설정 관리
+- GitHub 저장소 등록 및 관리
+- Jenkins 서버 연동 설정
+- PR 폴링 주기 실시간 조정
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 모니터링
+- PR 폴링 상태 실시간 확인
+- 빌드 트리거 이력 조회
+- 서버 연결 상태 표시
+
+### 실시간 통신
+- WebSocket 기반 양방향 통신
+- 설정 변경 즉시 반영
+- 서버 이벤트 실시간 수신
